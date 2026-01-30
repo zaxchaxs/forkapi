@@ -5,10 +5,11 @@ import { LuMoveRight } from "react-icons/lu";
 import photography13 from "@/assets/images/pexels-felicity-tai-7964173.jpg";
 import photography14 from "@/assets/images/pexels-jitte-davidson-2159038077-35755225.jpg";
 import photography7 from "@/assets/images/pexels-henri-mathieu-8344902.jpg";
+import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
-    <section id="tentang kami" className="py-10 lg:py-20">
+    <section id="tentang kami" className="py-5 lg:py-10">
       <div className="container">
         <div className="grid grid-cols-1 items-end gap-4 lg:grid-cols-2">
           <div>
@@ -24,13 +25,12 @@ const About = () => {
             <p className="mb-6 mt-4 text-lg">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio odio eum quisquam amet dignissimos consequatur cum molestias quae, officiis obcaecati magnam architecto inventore nobis dolore explicabo, quos tenetur recusandae quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et assumenda at reprehenderit maiores. Fugiat doloribus omnis necessitatibus, reiciendis velit quod libero itaque! Adipisci ex, nobis numquam repellendus voluptatem molestias quisquam?
             </p>
-            <Link
-              href=""
-              className="inline-flex items-center justify-center gap-2 bg-primary px-7 py-2 text-base text-white transition-all hover:bg-primary-700 w-fit"
-            >
-              Selengkapnya
-              <LuMoveRight className="h-6 w-6" />
-            </Link>
+            <Button className='p-0 py-0 w-fit'>
+              <Link href="#" className='text-white flex items-center gap-2 px-8 py-2'>
+                Selengkapnya
+                <LuMoveRight className="h-5 w-5" />
+              </Link>
+            </Button>
             <div className="mt-10 grid grid-cols-3 gap-2">
               {/* <Image width={400} height={400} alt="photography-image" src={photography13} /> */}
               <Image width={400} height={400} alt="photography-image5" src={photography14} />

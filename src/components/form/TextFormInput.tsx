@@ -8,7 +8,7 @@ import {
   PathValue,
 } from 'react-hook-form'
 import { LuAlertCircle } from 'react-icons/lu'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 
 type BaseInputProps = DetailedHTMLProps<
   InputHTMLAttributes<HTMLInputElement>,

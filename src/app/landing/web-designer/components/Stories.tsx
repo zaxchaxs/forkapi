@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { stories } from '../data'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 import { LuMoveRight } from 'react-icons/lu'
 
 const Stories = () => {

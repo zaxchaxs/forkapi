@@ -109,4 +109,27 @@ const allCauses: CausesType[] = [
   },
 ];
 
+export const tempFocusAndScope = [
+  "Komunikasi Pembangunan untuk Sustainable Development Goals (SDG's)",
+  "Komunikasi dan Inovasi Pelayanan Publik",
+  "Komunikasi dan Pengarusutamaan Gender",
+  "Komunikasi, Pelestarian Lingkungan & Perubahan Iklim",
+  "Mengelola Corporate Social Responcibility untuk Pemberdayaan Masyarakat",
+  "Jurnalisme dan PR Pembangunan",
+  "Teknologi, Komunikasi dan Masyarakat Digital",
+  "Penggunaan Artificial Intelligence untuk Pembangunan",
+  "Komunikasi dan Pengembangan Masyarakat Adat",
+  "Komunikasi dan Mitigasi Bencana",
+  "Komunikasi dan Solusi Konflik Sumber Daya Alam (SDA)",
+]
+
+export const tempBenefits = [
+  "E-Certificate",
+  "E-Proceeding with ISSN",
+  "Networking",
+  "Best Paper Award",
+  "Home stay",
+  "City Tour"
+]
+
 export { allService, allCauses, testimonialSlides };

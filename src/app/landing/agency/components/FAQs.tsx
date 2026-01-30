@@ -3,7 +3,7 @@ import { LuChevronUp } from 'react-icons/lu'
 import agency11 from '@/assets/images/landing/agency/img-11.jpg'
 import agency12 from '@/assets/images/landing/agency/img-12.jpg'
 import { faqContents } from '../data'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 import Image from 'next/image'
 
 const FAQs = () => {

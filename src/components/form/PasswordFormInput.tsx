@@ -2,7 +2,7 @@
 import { DetailedHTMLProps, InputHTMLAttributes, useState } from 'react'
 import { FieldPath, FieldValues, Controller, PathValue } from 'react-hook-form'
 import { LuAlertCircle, LuEye, LuEyeOff } from 'react-icons/lu'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 import { FormInputProps } from './TextFormInput'
 
 type BaseInputProps = DetailedHTMLProps<

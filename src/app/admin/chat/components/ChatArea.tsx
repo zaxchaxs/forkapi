@@ -1,6 +1,6 @@
 'use client'
 import TextFormInput from '@/components/form/TextFormInput'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 import { yupResolver } from '@hookform/resolvers/yup'
 import Image from 'next/image'
 import Link from 'next/link'

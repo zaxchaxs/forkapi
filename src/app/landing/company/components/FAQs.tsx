@@ -1,7 +1,7 @@
 import company3 from '@/assets/images/landing/company/img-3.jpg'
 import company4 from '@/assets/images/landing/company/img-4.jpg'
 import { faqContent } from '../data'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 import { LuChevronUp } from 'react-icons/lu'
 import Image from 'next/image'
 

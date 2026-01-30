@@ -1,6 +1,6 @@
 import { LuChevronUp } from 'react-icons/lu'
 import { faqContent } from '../data'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 
 const FAQs = () => {
   return (

@@ -1,5 +1,5 @@
 'use client'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 import GLightbox from 'glightbox'
 import { useEffect, useRef, type AnchorHTMLAttributes } from 'react'
 

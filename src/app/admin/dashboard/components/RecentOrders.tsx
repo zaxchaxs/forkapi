@@ -1,6 +1,6 @@
 import { LuUpload } from 'react-icons/lu'
 import Link from 'next/link'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 
 import { recentOrders } from '../data'
 

@@ -1,4 +1,4 @@
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 
 const faqs = [
   'Is Subscription Upgrading Possible?',

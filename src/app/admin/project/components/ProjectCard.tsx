@@ -1,4 +1,4 @@
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 import { LuAlignJustify, LuCalendar, LuMessageSquare } from 'react-icons/lu'
 import { ProjectType } from '../data'
 import Image from 'next/image'

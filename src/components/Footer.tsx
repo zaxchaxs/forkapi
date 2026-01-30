@@ -6,8 +6,8 @@ import { useForm } from 'react-hook-form'
 import { LuMoveRight } from 'react-icons/lu'
 import * as yup from 'yup'
 
-import logoDark from '@/assets/images/logo-dark.png'
-import logoLight from '@/assets/images/logo-light.png'
+import logoDark from '@/assets/images/mainLogo.png'
+import logoLight from '@/assets/images/mainLogo.png'
 import { TextFormInput } from '@/components'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -30,20 +30,20 @@ const Footer = () => {
           <div className="grid gap-10 md:grid-cols-3 lg:gap-16 xl:grid-cols-5">
             <div className="md:col-span-3 xl:col-span-2">
               <div>
-                <Link href="">
+                <Link href="" className='w-fit'>
                   <Image
                     src={logoDark}
                     height={40}
                     width={147}
                     alt="logo"
-                    className="flex h-10 dark:hidden"
+                    className="flex h-25 dark:hidden object-cover"
                   />
                   <Image
                     src={logoLight}
                     height={40}
                     width={147}
                     alt="logo"
-                    className="hidden h-10 dark:flex"
+                    className="hidden h-25 dark:flex object-cover"
                   />
                 </Link>
                 <p className="mt-6  text-base">
@@ -51,7 +51,7 @@ const Footer = () => {
                   blandit eget. Proin lacinia mortoc id odio vestibulum.
                 </p>
                 <form
-                  onSubmit={handleSubmit(() => {})}
+                  onSubmit={handleSubmit(() => { })}
                   className="mt-6 space-y-2"
                 >
                   <TextFormInput
@@ -114,24 +114,6 @@ const Footer = () => {
               )
             })}
           </div>
-        </div>
-      </div>
-      <div className="py-4">
-        <div className="container flex h-full flex-wrap items-center justify-center text-center md:justify-between md:text-start">
-          <p className="text-base text-default-900">
-            {new Date().getFullYear()} © AeroPage. Crafted and Coded with&nbsp;
-            <span className="text-red-500">❤️</span> by&nbsp;
-            <Link
-              className="text-primary-700"
-              href="https://coderthemes.com/"
-              target="_blank"
-            >
-              Coderthemes
-            </Link>
-          </p>
-          <p className="text-base">
-            <Link href="">Terms Conditions &amp; Policy</Link>
-          </p>
         </div>
       </div>
     </footer>

@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link'
 import { adminMenu } from './data'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 import { usePathname } from 'next/navigation'
 
 const AdminMenu = () => {

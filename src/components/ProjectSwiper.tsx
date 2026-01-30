@@ -1,7 +1,7 @@
 'use client'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { FreeMode, Thumbs } from 'swiper/modules'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 
 import 'swiper/css'
 import Image, { type StaticImageData } from 'next/image'

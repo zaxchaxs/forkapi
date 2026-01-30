@@ -1,7 +1,7 @@
 import { LuMoveRight } from 'react-icons/lu'
 import Link from 'next/link'
 import { faqContent } from '../data'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 
 const FAQs = () => {
   return (

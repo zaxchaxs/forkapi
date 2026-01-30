@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { accolades } from '../data'
 import { LuArrowUpRight } from 'react-icons/lu'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 
 const Accolades = () => {
   return (

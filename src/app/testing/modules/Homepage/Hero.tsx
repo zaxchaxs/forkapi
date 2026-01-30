@@ -9,6 +9,7 @@ import Link from 'next/link'
 import { LuMoveRight } from 'react-icons/lu'
 import { useLayoutContext } from '@/context'
 import Image from 'next/image'
+import { Button } from '@/components/ui/button'
 
 const Hero = () => {
   const { themeMode } = useLayoutContext()
@@ -36,13 +37,12 @@ const Hero = () => {
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore expedita possimus alias enim dolor deleniti quidem ea perferendis commodi beatae. Laudantium, vel! Error magni quasi pariatur asperiores eligendi sapiente minus.
                 </p>
                 <div className="mt-10">
-                  <Link
-                    href=""
-                    className="inline-flex items-center justify-center gap-2 rounded-md bg-primary px-8 py-2 text-base text-white transition-all duration-300 hover:bg-primary-700"
-                  >
-                    Selengkapnya
-                    <LuMoveRight className="h-6 w-6" />
-                  </Link>
+                  <Button className='p-0 py-0 rounded-full'>
+                    <Link href="#" className='text-white flex items-center gap-2 px-8 py-2'>
+                      Selengkapnya
+                      <LuMoveRight className="h-6 w-6" />
+                    </Link>
+                  </Button>
                 </div>
               </div>
             </div>

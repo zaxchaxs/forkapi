@@ -8,6 +8,7 @@ import photography6 from "@/assets/images/pexels-jitte-davidson-2159038077-35755
 import photography9 from "@/assets/images/pexels-henri-mathieu-8344902.jpg";
 import photography10 from "@/assets/images/pexels-felicity-tai-7964173.jpg";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 const portfolioImages = [
   photography3,
@@ -24,7 +25,7 @@ const portfolioImages2 = [
 
 const GallerySection = () => {
   return (
-    <section id="galeri" className="py-10 lg:py-20">
+    <section id="galeri" className="py-5 lg:py-10 ">
       <div className="container">
         <div className="flex flex-wrap items-center justify-between gap-5">
           <div>
@@ -39,14 +40,6 @@ const GallerySection = () => {
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam facere earum voluptatem aperiam consectetur aspernatur rerum repellendus dolore sequi ad repudiandae quos tempora velit laborum neque, facilis, optio, blanditiis corrupti?
               </p>
             </div>
-          </div>
-          <div>
-            <Link
-              href=""
-              className="inline-flex items-center justify-center gap-2 border border-default-200 bg-primary px-6 py-2 text-white transition-all duration-300 hover:bg-primary-700"
-            >
-              Lihat semua
-            </Link>
           </div>
         </div>
       </div>
@@ -102,14 +95,13 @@ const GallerySection = () => {
           </div>
         </div>
       </div>
-      <div className="mt-12 flex items-center justify-center">
-        <Link
-          href=""
-          className="inline-flex items-center justify-center gap-2 rounded border border-default-200 px-6 py-2 text-base font-medium text-default-950 transition-all duration-300 hover:bg-primary hover:text-default-950"
-        >
-          Lihat semua
-          <LuMoveRight className="h-5 w-5" />
-        </Link>
+      <div className="flex items-center justify-center pt-5 lg:pt-10 ">
+        <Button variant={"outline"} className='p-0 py-0'>
+          <Link href="#" className='text-default-950 flex items-center gap-2 px-8 py-2'>
+            Lihat semua
+            <LuMoveRight className="h-5 w-5" />
+          </Link>
+        </Button>
       </div>
     </section>
   );

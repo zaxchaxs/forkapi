@@ -27,7 +27,7 @@ const brands = [
 ]
 const MediaPartner = () => {
   return (
-    <section className="">
+    <section className="pb-5 lg:pb-10">
       <div className="container">
         <div className="grid grid-cols-1 items-center gap-6 xl:grid-cols-6">
           <div className="xl:col-span-2">

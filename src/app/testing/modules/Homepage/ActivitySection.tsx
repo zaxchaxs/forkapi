@@ -2,10 +2,11 @@ import { LuArrowUpRight, LuMoveRight } from 'react-icons/lu'
 import Link from 'next/link'
 import { allCauses } from '../../data'
 import Image from 'next/image'
+import { Button } from '@/components/ui/button'
 
 const ActivitySection = () => {
   return (
-    <section id="kegiatan" className="py-10 lg:py-20">
+    <section id="kegiatan" className="py-5 lg:py-10 ">
       <div className="container">
         <div className="mx-auto mb-12 max-w-2xl text-center">
           <span className="rounded-md border border-primary bg-primary/20 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
@@ -52,7 +53,14 @@ const ActivitySection = () => {
             )
           })}
         </div>
-
+        <div className="flex items-center justify-center pt-5 lg:pt-10">
+          <Button className='p-0 py-0'>
+            <Link href="#" className='text-white flex items-center gap-2 px-8 py-2'>
+              Lihat semua
+              <LuMoveRight className="h-5 w-5" />
+            </Link>
+          </Button>
+        </div>
       </div>
     </section>
   )

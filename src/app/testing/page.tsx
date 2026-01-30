@@ -6,10 +6,10 @@ import Newsletter from './components/Newsletter'
 import About from './modules/Homepage/About'
 import ContactUs from './modules/Homepage/ContactUs'
 import FAQs from './modules/Homepage/FAQs'
-import TestimonialSlider from './modules/Homepage/ConferenceSection'
 import MediaPartner from './modules/Homepage/MediaPartner'
 import ActivitySection from './modules/Homepage/ActivitySection'
 import GallerySection from './modules/Homepage/GallerySection'
+import ConferenceSection from './modules/Homepage/ConferenceSection'
 
 export const metadata: Metadata = {
   title: 'Charity',
@@ -17,25 +17,25 @@ export const metadata: Metadata = {
 
 const Charity = () => {
   return (
-    <>
+    <main className='w-full h-full flex flex-col gap-4'>
       <TopNavBar
-        menuItems={['home', 'tentang kami', 'konferensi', 'kegiatan', 'galeri', 'kontak']}
+        menuItems={['home', 'tentang kami', 'konferensi', 'kegiatan', 'galeri',]}
         position="fixed"
       />
 
       <Hero />
       <About />
-      <TestimonialSlider />
+      <ConferenceSection />
       <MediaPartner />
       <ActivitySection />
       <GallerySection />
 
-      <Counter />
-      <Newsletter />
+      {/* <Counter /> */}
+      {/* <Newsletter /> */}
 
       <FAQs />
-      <ContactUs />
-    </>
+      {/* <ContactUs /> */}
+    </main>
   )
 }
 

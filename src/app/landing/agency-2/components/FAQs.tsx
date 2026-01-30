@@ -1,4 +1,4 @@
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 import { faqContent } from '../data'
 import { LuChevronUp } from 'react-icons/lu'
 

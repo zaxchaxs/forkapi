@@ -1,13 +1,13 @@
 import web6 from '@/assets/images/landing/web-designer/img-6.jpg'
 import web7 from '@/assets/images/landing/web-designer/img-7.jpg'
 import { faqContent } from '../../data'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 import { LuChevronUp } from 'react-icons/lu'
 import Image from 'next/image'
 
 const FAQs = () => {
   return (
-    <section id="faq" className="py-10 lg:py-20">
+    <section id="faq" className="py-5 lg:py-10">
       <div className="container">
         <div className="mb-10 flex items-end justify-between">
           <div className="mx-auto max-w-2xl text-center">

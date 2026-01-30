@@ -1,7 +1,7 @@
 import web6 from '@/assets/images/landing/web-designer/img-6.jpg'
 import web7 from '@/assets/images/landing/web-designer/img-7.jpg'
 import { faqContent } from '../data'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 import { LuChevronUp } from 'react-icons/lu'
 import Image from 'next/image'
 

@@ -1,5 +1,5 @@
 import { ComponentContainerCard } from '@/components'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 import { LuChevronDown, LuMinus, LuPlus } from 'react-icons/lu'
 
 const AccordionExample = () => {

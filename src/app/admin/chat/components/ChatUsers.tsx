@@ -1,4 +1,4 @@
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 import { users, type ChatUser } from '../data'
 import Image from 'next/image'
 

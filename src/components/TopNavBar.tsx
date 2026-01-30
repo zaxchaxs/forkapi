@@ -1,6 +1,6 @@
 'use client';
 import { toSentenceCase } from '@/helpers';
-import { cn } from '@/utils';
+import { cn } from '@/lib/utils/index';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -8,8 +8,8 @@ import { useEffect, useRef, useState } from 'react';
 import { LuChevronDown, LuDownloadCloud, LuMenu, LuX } from 'react-icons/lu';
 import { landingPages } from '@/assets/data';
 
-import logoDark from '@/assets/images/logo-dark.png';
-import logoLight from '@/assets/images/logo-light.png';
+import logoDark from '@/assets/images/mainLogo.png';
+import logoLight from '@/assets/images/mainLogo.png';
 
 const TopNavBar = ({
   menuItems,
@@ -24,7 +24,7 @@ const TopNavBar = ({
   const navbarRef = useRef<HTMLDivElement>(null);
   const hash = window.location.hash;
   const pathname = usePathname();
-  
+
   useEffect(() => {
     document.addEventListener('scroll', (e) => {
       e.preventDefault();
@@ -77,21 +77,22 @@ const TopNavBar = ({
           <div className="container">
             <nav className="flex flex-wrap items-center justify-between gap-4 lg:flex-nowrap">
               <div className="flex w-full items-center justify-between lg:w-auto">
-                <Link href="/">
+                <Link href="/" className="flex items-center gap-2">
                   <Image
                     src={logoDark}
                     alt="logo"
-                    height={40}
-                    width={147}
-                    className="flex h-10 dark:hidden"
+                    // height={40}
+                    // width={147}
+                    className="flex w-12 dark:hidden object-cover"
                   />
                   <Image
                     src={logoLight}
                     alt="logo"
-                    height={40}
-                    width={147}
-                    className="hidden h-10 dark:flex"
+                    // height={40}
+                    // width={147}
+                    className="hidden w-12 dark:flex object-cover"
                   />
+                  <span className="text-xl font-bold text-default-800 dark:text-white">FORKAPI</span>
                 </Link>
                 <div className="flex items-center gap-2">
                   {hasDownloadButton && (

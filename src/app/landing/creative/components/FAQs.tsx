@@ -2,7 +2,7 @@ import creative2 from '@/assets/images/landing/creative/img-2.jpg'
 import creative7 from '@/assets/images/landing/creative/img-7.jpg'
 import { faqContent } from '../data'
 import { LuChevronUp, LuHelpCircle } from 'react-icons/lu'
-import { cn } from '@/utils'
+import { cn } from '@/lib/utils/index'
 import Image from 'next/image'
 
 const FAQs = () => {
