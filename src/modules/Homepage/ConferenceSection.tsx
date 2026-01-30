@@ -5,23 +5,24 @@ import { LuArrowUpRight, LuChevronLeft, LuChevronRight, LuStar, LuCheck, LuPhone
 import { Swiper, SwiperSlide } from 'swiper/react'
 import { FreeMode, Navigation, Pagination, Thumbs } from 'swiper/modules'
 
-import { tempBenefits, tempFocusAndScope, testimonialSlides } from '../../data'
+import { tempBenefits, tempFocusAndScope, testimonialSlides } from '../../../public/data'
 
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
+import SectionBadge from '@/components/ui/SectionBadge'
 
 const ConferenceSection = () => {
   return (
-    <section id="konferensi" className=" py-5 lg:py-10">
+    <section id="konferensi" className="relative py-5 lg:py-10">
       <div className="container">
         <div className="mb-10 flex items-end justify-between">
           <div className="mx-auto max-w-2xl text-center">
-            <span className="rounded-md border border-primary bg-primary/20 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
+            <SectionBadge>
               konferensi
-            </span>
+            </SectionBadge>
             <h2 className="my-4 text-4xl font-medium text-default-950">
               Konferensi Nasional Komunikasi Pembangunan
             </h2>
@@ -33,14 +34,26 @@ const ConferenceSection = () => {
 
         <div className="mx-auto w-full">
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-5">
-            <div className="col-span-2">
-              <div className="h-full w-full">
+            <div className="col-span-2 w-full h-full">
+              <div className="relative w-full h-full p-6">
+                <Image
+                  src={ebook18}
+                  alt="ebook18"
+                  fill
+                  className="object-cover rounded-xl"
+                />
+              </div>
+
+              {/* <div className="h-full w-full relative">
                 <Image
                   alt="ebook18"
                   src={ebook18}
-                  className="h-[35rem] object-cover w-full rounded-xl"
+                  // width={600}
+                  fill
+
+                  className="h-full w-full object-cover rounded-xl"
                 />
-              </div>
+              </div> */}
             </div>
             <div className="relative col-span-3">
               <div className="flex flex-col justify-between w-full gap-4">

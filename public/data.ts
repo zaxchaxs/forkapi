@@ -19,8 +19,8 @@ import charity7 from "@/assets/images/pexels-jitte-davidson-2159038077-35755225.
 import charity9 from "@/assets/images/landing/charity/img-9.jpg";
 import charity10 from "@/assets/images/landing/charity/img-10.jpg";
 import charity11 from "@/assets/images/landing/charity/img-11.jpg";
-import avatar1 from '@/assets/images/avatars/img-1.jpg'
-import avatar2 from '@/assets/images/avatars/img-2.jpg'
+import avatar1 from "@/assets/images/avatars/img-1.jpg";
+import avatar2 from "@/assets/images/avatars/img-2.jpg";
 
 export const faqContent: FaqType[] = [
   {
@@ -52,20 +52,20 @@ export const faqContent: FaqType[] = [
 
 const testimonialSlides: TestimonialSlideType[] = [
   {
-    name: 'Adam Peterson',
-    position: 'Marketing Consultant',
+    name: "Adam Peterson",
+    position: "Marketing Consultant",
     description:
-      'This template is exquisitely designed and offers fantastic new features. It receives regular updates, ensuring top-notch quality. The support team is unparalleled, providing prompt, courteous, premium, and exceptionally helpful assistance!',
+      "This template is exquisitely designed and offers fantastic new features. It receives regular updates, ensuring top-notch quality. The support team is unparalleled, providing prompt, courteous, premium, and exceptionally helpful assistance!",
     image: avatar1,
   },
   {
-    name: 'Jordan Harvey',
-    position: 'SEO/SMO Expert',
+    name: "Jordan Harvey",
+    position: "SEO/SMO Expert",
     description:
       "Optimization and structure are excellent for SEO fundamentals. An impressive model, everything has been meticulously crafted, from the design to the various adaptations. A beautiful template with clean code that's easy to customize.",
     image: avatar2,
   },
-]
+];
 
 const allService: serviceType[] = [
   {
@@ -121,7 +121,7 @@ export const tempFocusAndScope = [
   "Komunikasi dan Pengembangan Masyarakat Adat",
   "Komunikasi dan Mitigasi Bencana",
   "Komunikasi dan Solusi Konflik Sumber Daya Alam (SDA)",
-]
+];
 
 export const tempBenefits = [
   "E-Certificate",
@@ -129,7 +129,7 @@ export const tempBenefits = [
   "Networking",
   "Best Paper Award",
   "Home stay",
-  "City Tour"
-]
+  "City Tour",
+];
 
 export { allService, allCauses, testimonialSlides };

@@ -1,17 +1,27 @@
+'use client'
+
 import { LuArrowUpRight, LuMoveRight } from 'react-icons/lu'
 import Link from 'next/link'
-import { allCauses } from '../../data'
+import { allCauses } from '../../../public/data'
 import Image from 'next/image'
 import { Button } from '@/components/ui/button'
+import SectionBadge from '@/components/ui/SectionBadge'
+import backgroundLine from '@/assets/images/other/bg-lines-2.png'
+import backgroundLineDark from '@/assets/images/other/bg-lines-2-dark.png'
+import { useLayoutContext } from '@/context'
 
 const ActivitySection = () => {
+  const { themeMode } = useLayoutContext()
+
   return (
-    <section id="kegiatan" className="py-5 lg:py-10 ">
+    <section id="kegiatan" className="relative bg-default-100 bg-cover bg-no-repeat py-24 dark:bg-default-50 lg:py-10" style={{
+      backgroundImage: `url(${themeMode === 'light' ? backgroundLine.src : backgroundLineDark.src})`,
+    }}>
       <div className="container">
         <div className="mx-auto mb-12 max-w-2xl text-center">
-          <span className="rounded-md border border-primary bg-primary/20 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
+          <SectionBadge>
             Kegiatan Forkapi
-          </span>
+          </SectionBadge>
           <h2 className="mt-4 text-4xl/snug font-medium text-default-950">
             Kegiatan yang diselenggarakan FORKAPI
           </h2>

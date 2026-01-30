@@ -1,9 +1,10 @@
 import web6 from '@/assets/images/landing/web-designer/img-6.jpg'
 import web7 from '@/assets/images/landing/web-designer/img-7.jpg'
-import { faqContent } from '../../data'
+import { faqContent } from '../../../public/data'
 import { cn } from '@/lib/utils/index'
 import { LuChevronUp } from 'react-icons/lu'
 import Image from 'next/image'
+import SectionBadge from '@/components/ui/SectionBadge'
 
 const FAQs = () => {
   return (
@@ -11,9 +12,9 @@ const FAQs = () => {
       <div className="container">
         <div className="mb-10 flex items-end justify-between">
           <div className="mx-auto max-w-2xl text-center">
-            <span className="rounded-md border border-primary bg-primary/20 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
+            <SectionBadge>
               FAQ
-            </span>
+            </SectionBadge>
             <h2 className="my-4 text-3xl font-medium capitalize text-default-950">
               Pertanyaan yang Sering Diajukan
             </h2>

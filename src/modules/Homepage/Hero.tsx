@@ -1,4 +1,5 @@
 'use client'
+
 import charityImg1 from '@/assets/images/pexels-henri-mathieu-8344902.jpg'
 import charityImg2 from '@/assets/images/pexels-felicity-tai-7964173.jpg'
 import charityImg3 from '@/assets/images/pexels-jitte-davidson-2159038077-35755225.jpg'

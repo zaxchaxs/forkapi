@@ -6,19 +6,22 @@ import photography13 from "@/assets/images/pexels-felicity-tai-7964173.jpg";
 import photography14 from "@/assets/images/pexels-jitte-davidson-2159038077-35755225.jpg";
 import photography7 from "@/assets/images/pexels-henri-mathieu-8344902.jpg";
 import { Button } from "@/components/ui/button";
+import SectionBadge from "@/components/ui/SectionBadge";
 
 const About = () => {
   return (
     <section id="tentang kami" className="py-5 lg:py-10">
       <div className="container">
         <div className="grid grid-cols-1 items-end gap-4 lg:grid-cols-2">
-          <div>
-            <Image width={600} alt="photography7" src={photography7} />
+          <div className="relative w-full h-full">
+            <Image fill className="h-[25rem] object-cover" alt="photography7" src={photography7} />
           </div>
           <div className="flex flex-col gap-4">
-            <span className="rounded-md border w-fit border-primary bg-primary/20 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
-              Tentang FORKAPI
-            </span>
+            <div className="flex w-full justify-center">
+              <SectionBadge>
+                Tentang FORKAPI
+              </SectionBadge>
+            </div>
             <h2 className="text-4xl font-medium text-default-950">
               Lembaga Profesional Komunikasi Pembangunan
             </h2>

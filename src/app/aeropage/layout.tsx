@@ -1,13 +1,12 @@
 import type { Metadata } from 'next'
 import { REM } from 'next/font/google'
-import { Suspense, type ReactNode } from 'react'
+import { type ReactNode } from 'react'
 import Image from 'next/image'
 import NextTopLoader from 'nextjs-toploader'
 import dynamic from 'next/dynamic'
 import { Toaster } from 'sonner'
 
 import '@/assets/css/style.css'
-import { Footer } from '@/components'
 
 const AppProvidersWrapper = dynamic(
   () => import('@/components/AppsProviderWrapper'),
@@ -29,7 +28,7 @@ export const metadata: Metadata = {
     template: 'FORKAPI - Forum Komunikasi Pembangunan Indonesia',
   },
   description:
-    'FORKAPI - Forum Komunikasi Pembangunan Indonesia',
+    'AeroPage - a cutting-edge, one-page template designed for unparalleled performance and seamless user experiences. This versatile template, initially released as AeroPage One Page Template, serves as the perfect starting point for your next project, showcasing expertise in building real websites with Tailwind CSS. The AeroPage Template epitomizes flexibility, user-friendliness, and responsiveness, delivering a seamless browsing experience across various devices, be it desktops, tablets, or mobiles. This template boasts an immaculately organized folder structure, clean code, and comprehensive comments, simplifying the process of customization. Built on the Tailwind CSS, AeroPage ensures compatibility across all devices, and its codebase is fully documented and W3C validated. Elevate your digital presence and captivate your audience with the AeroPage Template today.',
 }
 
 const splashScreenStyles = `
@@ -62,7 +61,6 @@ const splashScreenStyles = `
   }
 }
 `
-const loading = () => <div />
 
 export default function RootLayout({
   children,
@@ -86,12 +84,7 @@ export default function RootLayout({
         <NextTopLoader color="#ea580c" showSpinner={false} />
         <div id="__next_splash">
           <AppProvidersWrapper>
-            <Suspense fallback={loading()}>
-              {children}
-            </Suspense>
-            <Suspense fallback={loading()}>
-              <Footer />
-            </Suspense>
+            {children}
             <BackToTop />
             <Toaster richColors />
           </AppProvidersWrapper>

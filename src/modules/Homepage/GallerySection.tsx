@@ -9,6 +9,7 @@ import photography9 from "@/assets/images/pexels-henri-mathieu-8344902.jpg";
 import photography10 from "@/assets/images/pexels-felicity-tai-7964173.jpg";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
+import SectionBadge from "@/components/ui/SectionBadge";
 
 const portfolioImages = [
   photography3,
@@ -30,9 +31,9 @@ const GallerySection = () => {
         <div className="flex flex-wrap items-center justify-between gap-5">
           <div>
             <div className="mx-auto max-w-2xl flex flex-col gap-4">
-              <span className="rounded-md border w-fit border-primary bg-primary/20 px-3 py-1 text-xs font-medium uppercase tracking-wider text-primary">
+              <SectionBadge className="w-fit">
                 Galeri FORKAPI
-              </span>
+              </SectionBadge>
               <h2 className="mb-4 text-4xl font-medium text-default-950">
                 Galeri kegiatan FORKAPI
               </h2>
