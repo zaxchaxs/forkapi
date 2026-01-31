@@ -1,5 +1,5 @@
-import avatar1 from "@/assets/images/avatars/img-1.jpg";
-import avatar2 from "@/assets/images/avatars/img-2.jpg";
+import avatar1 from "@/assets/images/placeholder potrait.png";
+import avatar2 from "@/assets/images/placeholder potrait.png";
 
 export const vision =
   "Menjadi pusat unggulan komunikasi pembangunan yang inklusif dan berkelanjutan di Indonesia.";

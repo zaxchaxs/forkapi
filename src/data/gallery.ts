@@ -1,6 +1,6 @@
-import galleryImg1 from "@/assets/images/landing/charity/img-9.jpg";
-import galleryImg2 from "@/assets/images/landing/charity/img-10.jpg";
-import galleryImg3 from "@/assets/images/landing/charity/img-11.jpg";
+import galleryImg1 from "@/assets/images/placeholder landscape.png";
+import galleryImg2 from "@/assets/images/placeholder landscape.png";
+import galleryImg3 from "@/assets/images/placeholder landscape.png";
 
 export const galleryItems = [
   {

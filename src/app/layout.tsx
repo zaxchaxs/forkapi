@@ -9,6 +9,7 @@ import { Toaster } from 'sonner'
 import '@/assets/css/style.css'
 import { Footer, TopNavBar } from '@/components'
 import { menuItems } from '@/data/appData'
+import logo from '@/assets/images/mainLogo.png'
 
 const AppProvidersWrapper = dynamic(
   () => import('@/components/AppsProviderWrapper'),
@@ -80,8 +81,8 @@ export default function RootLayout({
             alt="Logo"
             width={355}
             height={83}
-            src={'/logo-dark.png'}
-            style={{ height: '10%', width: 'auto' }}
+            src={logo.src}
+            style={{ height: '30%', width: 'auto' }}
           />
         </div>
         <NextTopLoader color="#ea580c" showSpinner={false} />

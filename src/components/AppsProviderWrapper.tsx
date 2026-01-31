@@ -9,7 +9,7 @@ const handleChangeTitle = () => {
     document.title = 'Please come back :-('
   else
     document.title =
-      'AeroPage NextJs - Tailwind CSS Multipurpose One Page Landing Template'
+      'FORKAPI - Forum Komunikasi Pembangunan Indonesia'
 }
 
 const AppsProviderWrapper = ({

@@ -1,5 +1,5 @@
-import activityImg1 from "@/assets/images/landing/charity/img-11.jpg";
-import activityImg2 from "@/assets/images/landing/charity/img-9.jpg";
+import activityImg1 from "@/assets/images/placeholder landscape.png";
+import activityImg2 from "@/assets/images/placeholder landscape.png";
 
 export const activities = [
   {
@@ -10,7 +10,7 @@ export const activities = [
     category: "Pelatihan",
     image: activityImg1,
     description:
-      "Pelatihan intensif mengenai pemanfaatan media sosial untuk kampanye sosial.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore expedita possimus alias enim dolor deleniti quidem ea perferendis commodi beatae. Laudantium, vel! Error magni quasi pariatur asperiores eligendi sapiente minus.",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ export const activities = [
     category: "Pengabdian Masyarakat",
     image: activityImg2,
     description:
-      "Kegiatan monitoring dan evaluasi program pemberdayaan masyarakat.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore expedita possimus alias enim dolor deleniti quidem ea perferendis commodi beatae. Laudantium, vel! Error magni quasi pariatur asperiores eligendi sapiente minus.",
   },
   {
     id: 3,
@@ -30,6 +30,6 @@ export const activities = [
     category: "Pengabdian Masyarakat",
     image: activityImg2,
     description:
-      "Kegiatan monitoring dan evaluasi program pemberdayaan masyarakat.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore expedita possimus alias enim dolor deleniti quidem ea perferendis commodi beatae. Laudantium, vel! Error magni quasi pariatur asperiores eligendi sapiente minus.",
   },
 ];

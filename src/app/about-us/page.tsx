@@ -7,7 +7,8 @@ import Image from 'next/image';
 import { LuCheck, LuTarget, LuUsers } from 'react-icons/lu';
 
 // Placeholder image for about section
-import aboutImage from '@/assets/images/landing/charity/img-10.jpg';
+import aboutImage from '@/assets/images/pexels-felicity-tai-7964173.jpg';
+
 
 const AboutPage = () => {
     return (

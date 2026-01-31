@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: 'FORKAPI - Forum Komunikasi Pembangunan Indonesia',
   },
   description:
-    'AeroPage - a cutting-edge, one-page template designed for unparalleled performance and seamless user experiences. This versatile template, initially released as AeroPage One Page Template, serves as the perfect starting point for your next project, showcasing expertise in building real websites with Tailwind CSS. The AeroPage Template epitomizes flexibility, user-friendliness, and responsiveness, delivering a seamless browsing experience across various devices, be it desktops, tablets, or mobiles. This template boasts an immaculately organized folder structure, clean code, and comprehensive comments, simplifying the process of customization. Built on the Tailwind CSS, AeroPage ensures compatibility across all devices, and its codebase is fully documented and W3C validated. Elevate your digital presence and captivate your audience with the AeroPage Template today.',
+    'FORKAPI - Forum Komunikasi Pembangunan Indonesia',
 }
 
 const splashScreenStyles = `
