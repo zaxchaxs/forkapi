@@ -6,13 +6,13 @@ import { activities } from '@/data/activity';
 
 const ActivityPage = () => {
     return (
-        <main>
+        <main className='dark:bg-default-300'>
             <PageHeader
                 title="Kegiatan"
                 breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Kegiatan' }]}
             />
 
-            <section className="py-16 lg:py-24">
+            <section className="py-10 sm:py-16 lg:py-20">
                 <div className="container">
                     <div className="text-center max-w-2xl mx-auto mb-16">
                         <SectionBadge>Agenda & Berita</SectionBadge>

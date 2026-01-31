@@ -5,13 +5,13 @@ import { galleryItems } from '@/data/gallery';
 
 const GalleryPage = () => {
     return (
-        <main>
+        <main className='dark:bg-default-300'>
             <PageHeader
                 title="Galeri"
                 breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Galeri' }]}
             />
 
-            <section className="py-10 sm:py-16 lg:py-24">
+            <section className="py-10 sm:py-16 lg:py-20">
                 <div className="container">
                     <div className="text-center max-w-2xl mx-auto mb-10">
                         <h2 className="text-2xl text-center sm:text-3xl lg:text-4xl font-bold text-default-950">

@@ -10,7 +10,7 @@ interface TeamMemberCardProps {
 
 const TeamMemberCard = ({ name, role, image, bio }: TeamMemberCardProps) => {
     return (
-        <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-default-100 shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl border border-default-200 dark:border-default-700">
+        <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-default-300 dark:shadow-default-400/50 shadow-lg transition-all hover:-translate-y-2 hover:shadow-xl border border-default-200 dark:border-default-400">
             <div className="relative h-80 w-full overflow-hidden">
                 <Image
                     src={image}
@@ -26,7 +26,7 @@ const TeamMemberCard = ({ name, role, image, bio }: TeamMemberCardProps) => {
             <div className="p-6 text-center">
                 <h3 className="text-xl font-bold text-default-950 dark:text-white">{name}</h3>
                 <p className="mt-1 text-sm font-medium text-primary uppercase tracking-wider">{role}</p>
-                {bio && <p className="mt-3 text-sm text-default-600 line-clamp-2">{bio}</p>}
+                {bio && <p className="mt-3 text-sm text-default-600 line-clamp-2 dark:text-default-700">{bio}</p>}
             </div>
         </div>
     );

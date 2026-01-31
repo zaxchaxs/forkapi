@@ -6,14 +6,14 @@ import { upcomingConferences, pastConferences } from '@/data/conference';
 
 const ConferencePage = () => {
     return (
-        <main>
+        <main className='dark:bg-default-300'>
             <PageHeader
                 title="Konferensi"
                 breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Konferensi' }]}
             />
 
             {/* Upcoming Conferences */}
-            <section className="py-16 lg:py-24">
+            <section className="py-10 sm:py-16 lg:py-20">
                 <div className="container">
                     <div className="mb-10">
                         <div className='flex justify-center'>
@@ -45,7 +45,7 @@ const ConferencePage = () => {
             </section>
 
             {/* Past Conferences */}
-            <section className="py-16 sm:py-16 lg:py-24 bg-default-200 dark:bg-default-100/50">
+            <section className="py-10 sm:py-16 lg:py-20">
                 <div className="container">
                     <div className="mb-10">
                         <h2 className="text-2xl text-center sm:text-3xl font-bold text-default-950">Arsip Konferensi</h2>

@@ -11,14 +11,14 @@ import aboutImage from '@/assets/images/landing/charity/img-10.jpg';
 
 const AboutPage = () => {
     return (
-        <main>
+        <main className='dark:bg-default-300'>
             <PageHeader
                 title="Tentang Kami"
                 breadcrumb={[{ label: 'Home', href: '/' }, { label: 'Tentang Kami' }]}
             />
 
             {/* Vision & Mission Section */}
-            <section className="py-16 lg:py-24">
+            <section className="py-10 sm:py-16 lg:py-20">
                 <div className="container">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="relative">
@@ -36,7 +36,7 @@ const AboutPage = () => {
                                     </div>
                                     <h3 className="text-lg font-bold text-default-950">Visi Kami</h3>
                                 </div>
-                                <p className="text-sm text-default-600">
+                                <p className="text-sm text-default-600 dark:text-default-700">
                                     {vision}
                                 </p>
                             </div>
@@ -49,7 +49,7 @@ const AboutPage = () => {
                             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-default-950 mt-4 mb-6 lg:text-left text-center">
                                 Membangun Komunikasi untuk Pembangunan Berkelanjutan
                             </h2>
-                            <p className="text-default-600 mb-8 text-lg">
+                            <p className="text-default-600 mb-8 text-lg dark:text-default-700">
                                 FORKAPI (Forum Komunikasi Pembangunan Indonesia) adalah wadah bagi para akademisi, praktisi, dan pemerhati komunikasi pembangunan untuk bersinergi.
                             </p>
 
@@ -74,7 +74,7 @@ const AboutPage = () => {
             </section>
 
             {/* Team Section */}
-            <section className="py-16 lg:py-24 bg-default-50 dark:bg-default-100/50">
+            <section className="py-10 sm:py-16 lg:py-20">
                 <div className="container">
                     <div className="text-center max-w-2xl mx-auto mb-16">
                         <SectionBadge>Tim Kami</SectionBadge>

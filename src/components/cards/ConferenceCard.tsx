@@ -15,7 +15,7 @@ interface ConferenceCardProps {
 
 const ConferenceCard = ({ title, date, location, image, price, status }: ConferenceCardProps) => {
     return (
-        <div className="group flex flex-col overflow-hidden rounded-xl border border-default-200 dark:border-default-700 bg-white dark:bg-default-100 shadow-md transition-all hover:-translate-y-1 hover:shadow-xl">
+        <div className="group flex flex-col overflow-hidden rounded-xl border border-default-200 dark:border-default-400 bg-white dark:bg-default-300 dark:shadow-default-400/50 shadow-md transition-all hover:-translate-y-1 hover:shadow-xl">
             <div className="relative aspect-video w-full overflow-hidden">
                 <Image
                     src={image}
@@ -23,19 +23,19 @@ const ConferenceCard = ({ title, date, location, image, price, status }: Confere
                     fill
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute right-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-bold text-default-950 shadow-sm backdrop-blur-sm">
+                <div className="absolute right-3 top-3 rounded-full bg-white/90 dark:bg-default-400 px-3 py-1 text-xs font-bold text-default-950 shadow-sm backdrop-blur-sm">
                     {status}
                 </div>
             </div>
             <div className="flex flex-1 flex-col p-5">
-                <div className="flex items-center gap-2 text-xs font-medium text-default-500 dark:text-default-400">
+                <div className="flex items-center gap-2 text-xs font-medium text-default-500 dark:text-default-700">
                     <LuCalendar className="h-3.5 w-3.5" />
                     <span>{date}</span>
                 </div>
                 <h3 className="mt-3 text-lg font-bold text-default-950 dark:text-white line-clamp-2" title={title}>
                     {title}
                 </h3>
-                <div className="mt-4 flex items-center gap-2 text-sm text-default-600 dark:text-default-300">
+                <div className="mt-4 flex items-center gap-2 text-sm text-default-600 dark:text-default-700">
                     <LuMapPin className="h-4 w-4 text-primary" />
                     <span className="line-clamp-1">{location}</span>
                 </div>
