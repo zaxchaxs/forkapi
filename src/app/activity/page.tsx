@@ -16,10 +16,10 @@ const ActivityPage = () => {
                 <div className="container">
                     <div className="text-center max-w-2xl mx-auto mb-16">
                         <SectionBadge>Agenda & Berita</SectionBadge>
-                        <h2 className="text-3xl lg:text-4xl font-bold text-default-950 mt-4">
+                        <h2 className="text-2xl text-center sm:text-3xl lg:text-4xl font-bold text-default-950 mt-4">
                             Kegiatan Terbaru FORKAPI
                         </h2>
-                        <p className="text-default-600 mt-4">
+                        <p className="text-default-600 mt-4 text-center">
                             Ikuti terus perkembangan kegiatan dan program yang kami jalankan.
                         </p>
                     </div>

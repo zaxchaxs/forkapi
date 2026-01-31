@@ -1,7 +1,7 @@
 
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
-import { LuCalendar, LuMapPin, LuArrowRight, LuChevronRight } from "react-icons/lu";
+import { LuCalendar, LuMapPin, LuArrowRight, LuChevronRight, LuMoveRight } from "react-icons/lu";
 
 interface ConferenceCardProps {
     title: string;
@@ -40,14 +40,12 @@ const ConferenceCard = ({ title, date, location, image, price, status }: Confere
                     <span className="line-clamp-1">{location}</span>
                 </div>
                 <div className="mt-6 flex items-center justify-between border-t border-default-200 dark:border-default-700 pt-4">
-                    <div className="text-lg font-bold text-primary">
-                        {price === 0 ? 'Free' : `Rp ${price.toLocaleString('id-ID')}`}
-                    </div>
                     <Link
                         href="#"
-                        className="flex items-center gap-1 text-sm font-semibold text-default-950 dark:text-white hover:text-primary transition-colors"
+                        className="text-lg font-medium text-default-900 dark:text-white inline-flex items-center gap-2"
                     >
-                        Detail <LuChevronRight className="h-4 w-4" />
+                        Lihat Selengkapnya
+                        <LuMoveRight className="h-6 w-6 opacity-0 transition-all duration-500 will-change-transform group-hover:translate-x-2 group-hover:opacity-100" />
                     </Link>
                 </div>
             </div>

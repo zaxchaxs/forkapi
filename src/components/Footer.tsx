@@ -30,7 +30,7 @@ const Footer = () => {
           <div className="grid gap-10 md:grid-cols-3 lg:gap-16 xl:grid-cols-5">
             <div className="md:col-span-3 xl:col-span-2">
               <div>
-                <Link href="" className='w-fit'>
+                <Link href="" className='flex justify-center xl:justify-start'>
                   <Image
                     src={logoDark}
                     height={40}

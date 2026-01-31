@@ -29,22 +29,20 @@ const Hero = () => {
         />
         <div className="container">
           <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
-            <div>
-              <div className="flex flex-col justify-center">
-                <h2 className="sm:mb-4 text-2xl font-bold text-default-950 dark:text-white sm:text-4xl xl:text-5xl/tight">
-                  FORKAPI - Forum Komunikasi Pembangunan Indonesia
-                </h2>
-                <p className="mt-5 text-base sm:text-lg text-default-600 dark:text-default-300">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore expedita possimus alias enim dolor deleniti quidem ea perferendis commodi beatae. Laudantium, vel! Error magni quasi pariatur asperiores eligendi sapiente minus.
-                </p>
-                <div className="mt-10">
-                  <Button className='p-0 py-0 rounded-full'>
-                    <Link href="#" className='text-white flex items-center gap-2 px-8 py-2'>
-                      Selengkapnya
-                      <LuMoveRight className="h-6 w-6" />
-                    </Link>
-                  </Button>
-                </div>
+            <div className="flex flex-col justify-center">
+              <h2 className="sm:mb-4 mt-5 md:mt-10 lg:mt-0 text-2xl font-bold text-default-950 dark:text-white sm:text-4xl xl:text-5xl/tight">
+                FORKAPI - Forum Komunikasi Pembangunan Indonesia
+              </h2>
+              <p className="mt-5 text-base sm:text-lg text-default-600 dark:text-default-300">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore expedita possimus alias enim dolor deleniti quidem ea perferendis commodi beatae. Laudantium, vel! Error magni quasi pariatur asperiores eligendi sapiente minus.
+              </p>
+              <div className="mt-10">
+                <Button className='p-0 py-0 rounded-full'>
+                  <Link href="#" className='text-white flex items-center gap-2 px-8 py-2'>
+                    Selengkapnya
+                    <LuMoveRight className="h-6 w-6" />
+                  </Link>
+                </Button>
               </div>
             </div>
             <div className="z-10">

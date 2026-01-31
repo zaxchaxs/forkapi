@@ -22,7 +22,7 @@ const GallerySection = () => {
           <SectionBadge className="w-fit">
             Galeri FORKAPI
           </SectionBadge>
-          <h2 className="mb-4 text-2xl sm:text-3xl lg:text-4xl font-medium text-default-950">
+          <h2 className="mb-4 text-2xl sm:text-3xl lg:text-4xl font-medium text-default-950 text-center lg:text-left">
             Galeri kegiatan FORKAPI
           </h2>
         </div>

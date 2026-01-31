@@ -43,8 +43,10 @@ const AboutPage = () => {
                         </div>
 
                         <div>
-                            <SectionBadge>Profil Organisasi</SectionBadge>
-                            <h2 className="text-3xl lg:text-4xl font-bold text-default-950 mt-4 mb-6">
+                            <div className='flex items-center justify-center'>
+                                <SectionBadge>Profil Organisasi</SectionBadge>
+                            </div>
+                            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-default-950 mt-4 mb-6 lg:text-left text-center">
                                 Membangun Komunikasi untuk Pembangunan Berkelanjutan
                             </h2>
                             <p className="text-default-600 mb-8 text-lg">

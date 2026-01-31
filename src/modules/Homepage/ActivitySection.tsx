@@ -9,6 +9,8 @@ import SectionBadge from '@/components/ui/SectionBadge'
 import backgroundLine from '@/assets/images/other/bg-lines-2.png'
 import backgroundLineDark from '@/assets/images/other/bg-lines-2-dark.png'
 import { useLayoutContext } from '@/context'
+import { activities } from '@/data/activity'
+import ActivityCard from '@/components/cards/ActivityCard'
 
 const ActivitySection = () => {
   const { themeMode } = useLayoutContext()
@@ -31,36 +33,16 @@ const ActivitySection = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {allCauses.map((item, idx) => {
+          {activities.map((item, idx) => {
             return (
-              <div
+              <ActivityCard
                 key={idx}
-                className="group overflow-hidden rounded-xl border border-default-200 dark:border-default-700 bg-white dark:bg-default-100"
-              >
-                <div className="group relative overflow-hidden">
-                  <div className="overflow-hidden relative h-64">
-                    <Image
-                      alt="image"
-                      src={item.image}
-                      fill
-                      className="object-cover transition-all duration-500 group-hover:scale-110"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h2 className="text-xl font-bold text-default-950 dark:text-white transition-all duration-500 group-hover:underline line-clamp-2">
-                      {item.title}
-                    </h2>
-                    <p className="my-4 text-base text-default-600 dark:text-default-400 line-clamp-3">{item.description}</p>
-                    <Link
-                      href="#"
-                      className="text-lg font-medium text-default-900 dark:text-white inline-flex items-center gap-2"
-                    >
-                      Lihat Selengkapnya
-                      <LuMoveRight className="h-6 w-6 opacity-0 transition-all duration-500 will-change-transform group-hover:translate-x-2 group-hover:opacity-100" />
-                    </Link>
-                  </div>
-                </div>
-              </div>
+                title={item.title}
+                image={item.image}
+                description={item.description}
+                category={item.category}
+                date={item.date}
+              />
             )
           })}
         </div>

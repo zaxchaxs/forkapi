@@ -12,7 +12,7 @@ const About = () => {
   return (
     <section id="tentang kami" className="py-5 lg:py-10">
       <div className="container">
-        <div className="grid grid-cols-1 items-end gap-4 lg:grid-cols-2">
+        <div className="grid grid-cols-1 items-center gap-4 lg:gap-10 lg:grid-cols-2">
           <div className="relative w-full h-full">
             <Image fill className="h-[25rem] object-cover" alt="photography7" src={photography7} />
           </div>
@@ -22,7 +22,7 @@ const About = () => {
                 Tentang FORKAPI
               </SectionBadge>
             </div>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-default-950">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-default-950 text-center lg:text-left">
               Lembaga Profesional Komunikasi Pembangunan
             </h2>
             <p className=" text-lg">
