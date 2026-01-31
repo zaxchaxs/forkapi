@@ -13,7 +13,7 @@ interface ActivityCardProps {
 
 const ActivityCard = ({ title, date, image, description, category }: ActivityCardProps) => {
     return (
-        <div className="group flex flex-col overflow-hidden rounded-xl border border-default-200 dark:border-default-700 bg-white dark:bg-default-100 shadow-md transition-all hover:-translate-y-1 hover:shadow-xl">
+        <div className="group flex flex-col overflow-hidden rounded-xl border border-default-200 dark:border-default-500 bg-white dark:bg-default-200 shadow-md transition-all hover:-translate-y-1 hover:shadow-xl dark:shadow-default-400/50">
             <div className="relative aspect-[4/3] w-full overflow-hidden">
                 <Image
                     src={image}
@@ -26,14 +26,14 @@ const ActivityCard = ({ title, date, image, description, category }: ActivityCar
                 </div>
             </div>
             <div className="flex flex-1 flex-col p-6">
-                <div className="flex items-center gap-2 text-xs font-medium text-default-500 dark:text-default-400">
+                <div className="flex items-center gap-2 text-xs font-medium text-default-500 dark:text-default-700">
                     <LuCalendar className="h-3.5 w-3.5" />
                     <span>{date}</span>
                 </div>
                 <h3 className="mt-3 text-xl font-bold text-default-950 dark:text-white line-clamp-2 group-hover:text-primary transition-colors">
                     {title}
                 </h3>
-                <p className="mt-3 line-clamp-3 text-sm text-default-600 dark:text-default-400">
+                <p className="mt-3 line-clamp-3 text-sm text-default-600 dark:text-default-700">
                     {description}
                 </p>
                 <div className="mt-auto pt-6">

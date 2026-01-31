@@ -80,7 +80,7 @@ const TopNavBar = ({
           position,
           'inset-x-0 top-0 z-[60] w-full border-b border-transparent transition-all duration-300',
           'bg-white/80 dark:bg-default-50/80 backdrop-blur-md lg:bg-transparent lg:dark:bg-transparent', // Mobile default
-          '[&.nav-sticky]:bg-white/90 [&.nav-sticky]:shadow-md [&.nav-sticky]:backdrop-blur-3xl dark:[&.nav-sticky]:bg-default-50/90 dark:[&.nav-sticky]:border-default-200'
+          '[&.nav-sticky]:bg-white/90 [&.nav-sticky]:shadow-md [&.nav-sticky]:backdrop-blur-3xl dark:[&.nav-sticky]:bg-default-600/70 dark:[&.nav-sticky]:border-default-200'
         )}
       >
         <div className="flex h-full items-center py-4">
@@ -103,7 +103,7 @@ const TopNavBar = ({
                 <div className="flex items-center gap-2">
                   {/* Mobile Menu Toggle */}
                   <button
-                    className="hs-collapse-toggle inline-block lg:hidden text-default-600 dark:text-default-300 hover:text-default-900 dark:hover:text-white"
+                    className="hs-collapse-toggle inline-block lg:hidden text-default-600 dark:text-white hover:text-default-900 dark:hover:text-white"
                     data-hs-overlay="#mobile-menu"
                   >
                     <LuMenu className="h-7 w-7" />
@@ -122,7 +122,7 @@ const TopNavBar = ({
                         // Kalo mau berdasarkan scroll
                         // activation === item.href ? 'text-primary' : 'text-default-800 dark:text-default-300'
 
-                        pathname === item.href ? 'text-primary' : 'text-default-800 dark:text-default-300'
+                        pathname === item.href ? 'text-primary' : 'text-default-800 dark:text-white'
                       )}
                     >
                       <Link
@@ -153,7 +153,7 @@ const TopNavBar = ({
       {/* Mobile Menu */}
       <div
         id="mobile-menu"
-        className="hs-overlay fixed bottom-0 left-0 top-0 z-[61] hidden h-screen w-full max-w-[270px] -translate-x-full transform border-r border-default-200 bg-white transition-all [--body-scroll:true] [--overlay-backdrop:false] hs-overlay-open:translate-x-0 dark:bg-default-50 dark:border-default-200"
+        className="hs-overlay fixed bottom-0 left-0 top-0 z-[61] hidden h-screen w-full max-w-[270px] -translate-x-full transform border-r border-default-200 bg-white transition-all [--body-scroll:true] [--overlay-backdrop:false] hs-overlay-open:translate-x-0 dark:bg-default-600 dark:border-default-200"
         tabIndex={-1}
       >
         <div className="flex h-[74px] items-center justify-between border-b border-dashed border-default-200 px-4 transition-all duration-300">
@@ -175,7 +175,7 @@ const TopNavBar = ({
                   <li
                     key={idx}
                     className={cn(
-                      'rounded text-sm font-medium capitalize text-default-900 dark:text-default-300 transition-all duration-300 hover:bg-default-100 dark:hover:bg-default-100/10 hover:text-primary [&.active]:bg-default-100 dark:[&.active]:bg-default-100/10 [&.active]:text-primary',
+                      'rounded text-sm font-medium capitalize text-default-900 transition-all duration-300 hover:bg-default-100 dark:hover:bg-default-100/10 hover:text-primary [&.active]:bg-default-100 dark:[&.active]:bg-default-100/10 [&.active]:text-primary dark:[&.active]:text-white dark:text-default-50',
                       (pathname === linkHref || (linkHref !== '/' && pathname.startsWith(linkHref))) && 'active'
                     )}
                   >

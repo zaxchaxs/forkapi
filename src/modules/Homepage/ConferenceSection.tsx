@@ -16,17 +16,17 @@ import SectionBadge from '@/components/ui/SectionBadge'
 
 const ConferenceSection = () => {
   return (
-    <section id="conference" className="relative py-5 lg:py-10 bg-white dark:bg-default-50">
+    <section id="conference" className="relative py-5 lg:py-10 bg-default-100 dark:bg-default-200">
       <div className="container">
         <div className="mb-4 sm:mb-10 flex items-end justify-between">
           <div className="mx-auto max-w-2xl text-center">
             <SectionBadge>
               konferensi
             </SectionBadge>
-            <h2 className="my-4 text-2xl sm:text-3xl lg:text-4xl font-bold text-default-950 dark:text-white md:text-4xl">
+            <h2 className="my-4 text-2xl sm:text-3xl lg:text-4xl font-bold text-default-950 md:text-4xl">
               Konferensi Nasional Komunikasi Pembangunan
             </h2>
-            <p className="text-base font-medium text-default-600 dark:text-default-300">
+            <p className="text-base font-medium text-default-600 dark:white/70">
               &quot;Komunikasi Pembangunan Untuk Pengentasan Kemiskinan&quot;
             </p>
           </div>
@@ -55,7 +55,7 @@ const ConferenceSection = () => {
                     <div className="flex flex-wrap gap-2">
                       {
                         tempFocusAndScope.map((scope, idx) => (
-                          <span key={idx} className="bg-default-100 dark:bg-default-100/10 text-default-700 dark:text-default-300 px-3 py-1 rounded-md text-xs font-medium border border-default-200 dark:border-default-700">
+                          <span key={idx} className="bg-default-100 dark:bg-white/10 text-default-700 dark:text-white/70 px-3 py-1 rounded-md text-xs font-medium border border-default-200 dark:border-default-700">
                             {scope}
                           </span>
                         ))
@@ -71,7 +71,7 @@ const ConferenceSection = () => {
                     </h3>
                     <ul className="grid grid-cols-1 gap-2">
                       {tempBenefits.map((benefit, idx) => (
-                        <li key={idx} className="flex items-center gap-2 text-default-600 dark:text-default-400">
+                        <li key={idx} className="flex items-center gap-2 text-default-600 dark:text-white/70">
                           <LuCheck className="text-primary h-5 w-5 flex-shrink-0" />
                           <span className='text-sm'>{benefit}</span>
                         </li>
@@ -86,17 +86,17 @@ const ConferenceSection = () => {
                       <LuPhone className="text-primary w-5" />
                       Contact Person
                     </h3>
-                    <div className="bg-primary/5 dark:bg-primary/10 border border-primary/10 rounded-xl p-6 flex flex-wrap gap-6 justify-between">
+                    <div className="bg-primary/5 dark:bg-primary/20 border border-primary/10 rounded-xl p-6 flex flex-wrap gap-6 justify-between">
                       <div>
-                        <p className="font-medium text-default-900 dark:text-default-200">Admin Forkapi</p>
+                        <p className="font-medium text-default-900 dark:text-white/90">Admin Forkapi</p>
                         <p className="text-primary font-bold text-base">+62 812-3456-7890</p>
                       </div>
                       <div>
-                        <p className="font-medium text-default-900 dark:text-default-200">Admin Forkapi</p>
+                        <p className="font-medium text-default-900 dark:text-white/90">Admin Forkapi</p>
                         <p className="text-primary font-bold text-base">+62 812-3456-7890</p>
                       </div>
                       <div>
-                        <p className="font-medium text-default-900 dark:text-default-200">Admin Forkapi</p>
+                        <p className="font-medium text-default-900 dark:text-white/90">Admin Forkapi</p>
                         <p className="text-primary font-bold text-base">+62 812-3456-7890</p>
                       </div>
                     </div>
@@ -107,7 +107,7 @@ const ConferenceSection = () => {
                         Daftar sebagai presenter
                       </Link>
                     </Button>
-                    <Button variant="outline" className='p-0 py-0 rounded-full border-primary text-primary hover:bg-primary hover:text-white'>
+                    <Button variant="outline" className='p-0 py-0 rounded-full border-primary text-primary hover:bg-primary hover:text-white dark:bg-default-300 dark:border-default-300 dark:text-default-900 dark:hover:bg-default-400 dark:hover:text-default-900'>
                       <Link href="#" className='flex items-center gap-2 px-8 py-2'>
                         Daftar sebagai peserta
                       </Link>
@@ -123,7 +123,7 @@ const ConferenceSection = () => {
         <div className="py-10 mt-10 border-t border-dashed border-default-200 dark:border-default-700">
           <div className="text-center mb-10">
             <h3 className="text-2xl font-bold text-default-950 dark:text-white">Jadwal Pendaftaran</h3>
-            <p className="text-default-600 dark:text-default-400 mt-2">Tanggal penting dan batas waktu pendaftaran untuk konferensi</p>
+            <p className="text-default-600 dark:text-white/80 mt-2">Tanggal penting dan batas waktu pendaftaran untuk konferensi</p>
           </div>
 
           <div className="relative">
@@ -154,12 +154,12 @@ const ConferenceSection = () => {
                 }
               ].map((item, idx) => (
                 <div key={idx} className="group relative flex flex-col items-center">
-                  <div className="w-full bg-white dark:bg-default-100 border border-default-200 dark:border-default-700 rounded-xl p-6 text-center transition-all duration-300 hover:border-primary hover:shadow-lg hover:-translate-y-1 group-hover:dark:border-primary">
-                    <div className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-bold rounded-full mb-3">
+                  <div className="w-full bg-white dark:bg-default-300 border border-default-200 dark:border-default-700 rounded-xl p-6 text-center transition-all duration-300 hover:border-primary hover:shadow-lg hover:-translate-y-1 group-hover:dark:border-primary">
+                    <div className="inline-block px-3 py-1 bg-primary/10 dark:bg-default-400 text-primary dark:text-white text-sm font-bold rounded-full mb-3">
                       {item.date}
                     </div>
                     <h4 className="text-lg font-bold text-default-950 dark:text-white mb-2">{item.title}</h4>
-                    <p className="text-sm text-default-600 dark:text-default-400">{item.desc}</p>
+                    <p className="text-sm text-default-600 dark:text-white/80">{item.desc}</p>
                   </div>
 
                   {/* Moble Arrow (Down) */}

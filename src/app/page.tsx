@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-    <main className='w-full h-full flex flex-col gap-4'>
+    <main className='w-full h-full flex flex-col'>
       <Hero />
       <About />
       <ConferenceSection />

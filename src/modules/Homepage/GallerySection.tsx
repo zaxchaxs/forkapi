@@ -80,11 +80,11 @@ const GallerySection = () => {
                   className="h-full w-full object-cover transition-all duration-500 group-hover:scale-105"
                 />
               </div>
-              <div className="group h-full w-full overflow-hidden rounded-xl bg-white dark:bg-default-100 shadow-md">
+              <div className="group h-full w-full overflow-hidden rounded-xl bg-white shadow-md dark:bg-default-900">
                 <Link href="/gallery" className="relative flex h-full w-full items-center justify-center bg-default-950 dark:bg-black/80 transition-all hover:bg-primary">
                   <div className="text-center">
                     <div className="text-4xl px-2 font-medium text-white">100+</div>
-                    <p className="text-base text-default-300">
+                    <p className="text-base text-default-300 dark:text-default-700">
                       Foto & Video Kegiatan
                     </p>
                   </div>
@@ -97,7 +97,7 @@ const GallerySection = () => {
       </div>
       <div className="flex items-center justify-center pt-5 lg:pt-10 ">
         <Button variant={"outline"} className='p-0 py-0'>
-          <Link href="/gallery" className='text-default-950 flex items-center gap-2 px-8 py-2'>
+          <Link href="/gallery" className='text-default-950 flex items-center gap-2 px-8 py-2 dark:bg-default-200'>
             Lihat semua
             <LuMoveRight className="h-5 w-5" />
           </Link>

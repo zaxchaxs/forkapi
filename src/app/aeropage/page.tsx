@@ -7,11 +7,12 @@ import {
   Footer,
   Features,
 } from '@/components/home'
+import { menuItems } from '@/data/appData'
 
 export default function Home() {
   return (
     <>
-      <TopNavBar menuItems={['home', 'demos', 'features']} position="fixed" />
+      <TopNavBar menuItems={menuItems} position="fixed" />
 
       <Hero />
 

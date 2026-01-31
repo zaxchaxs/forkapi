@@ -10,7 +10,7 @@ const config: Config = {
     "node_modules/preline/dist/*.js",
   ],
 
-  darkMode: ["class", "class"],
+  darkMode: "class",
   safelist: [
     {
       pattern: /border-(sky|pink|purple)-500\/40/,

@@ -27,7 +27,7 @@ const brands = [
 ]
 const MediaPartner = () => {
   return (
-    <section className="pb-5 lg:pb-10">
+    <section className="pb-5 lg:pb-10 dark:bg-default-200">
       <div className="container">
         <div className="grid grid-cols-1 items-center gap-6 xl:grid-cols-6">
           <div className="xl:col-span-2">
@@ -73,13 +73,11 @@ const MediaPartner = () => {
             </Swiper>
           </div>
         </div>
-        <div className="mt-10 rounded-xl bg-default-100 p-10 dark:bg-default-50 lg:mt-20">
+        <div className="mt-10 rounded-xl bg-default-100 p-10 dark:bg-default-300 lg:mt-20">
           <div className="flex flex-wrap items-center justify-between gap-6">
-            <div>
-              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-default-950">
-                Lihat semua konferensi yang diselenggarakan FORKAPI
-              </h2>
-            </div>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-default-950">
+              Lihat semua konferensi yang diselenggarakan FORKAPI
+            </h2>
             <div>
               <Link
                 href="/conference"

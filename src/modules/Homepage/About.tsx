@@ -25,7 +25,7 @@ const About = () => {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-default-950 text-center lg:text-left">
               Lembaga Profesional Komunikasi Pembangunan
             </h2>
-            <p className=" text-lg">
+            <p className=" text-lg text-default-600 dark:text-white">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio odio eum quisquam amet dignissimos consequatur cum molestias quae, officiis obcaecati magnam architecto inventore nobis dolore explicabo, quos tenetur recusandae quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et assumenda at reprehenderit maiores. Fugiat doloribus omnis necessitatibus, reiciendis velit quod libero itaque! Adipisci ex, nobis numquam repellendus voluptatem molestias quisquam?
             </p>
             <Button className='p-0 py-0 w-fit'>

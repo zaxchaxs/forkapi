@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative bg-default-100 bg-cover bg-no-repeat py-24 dark:bg-default-50 lg:py-32"
+      className="relative bg-default-100  bg-cover bg-no-repeat py-24 dark:bg-default-100 lg:py-32"
       style={{
         backgroundImage: `url(${themeMode === 'light' ? backgroundLine.src : backgroundLineDark.src})`,
       }}
@@ -33,7 +33,7 @@ const Hero = () => {
               <h2 className="sm:mb-4 mt-5 md:mt-10 lg:mt-0 text-2xl font-bold text-default-950 dark:text-white sm:text-4xl xl:text-5xl/tight">
                 FORKAPI - Forum Komunikasi Pembangunan Indonesia
               </h2>
-              <p className="mt-5 text-base sm:text-lg text-default-600 dark:text-default-300">
+              <p className="mt-5 text-base sm:text-lg text-default-600 dark:text-white/70">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore expedita possimus alias enim dolor deleniti quidem ea perferendis commodi beatae. Laudantium, vel! Error magni quasi pariatur asperiores eligendi sapiente minus.
               </p>
               <div className="mt-10">
