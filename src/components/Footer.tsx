@@ -77,7 +77,7 @@ const Footer = () => {
               return (
                 <div key={idx}>
                   <ul className="flex flex-col gap-3">
-                    <h5 className="mb-2 font-medium text-default-800 lg:text-lg xl:text-xl">
+                    <h5 className="mb-2 font-medium text-default-800 dark:text-default-200 lg:text-lg xl:text-xl">
                       {item.title}
                     </h5>
                     {item.items.map((item, idx) => {
@@ -88,11 +88,11 @@ const Footer = () => {
                             <li className="group flex items-center gap-5">
                               <Link
                                 href={`${item.link ? item.link : ''}`}
-                                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-default-300 text-default-800 transition-all duration-700 group-hover:border-primary group-hover:bg-primary group-hover:text-white"
+                                className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-default-300 dark:border-default-700 text-default-800 dark:text-default-400 transition-all duration-700 group-hover:border-primary group-hover:bg-primary group-hover:text-white dark:group-hover:border-primary dark:group-hover:bg-primary dark:group-hover:text-white"
                               >
                                 <Icon className="h-5 w-5" />
                               </Link>
-                              <h5 className="text-base font-medium text-default-800">
+                              <h5 className="text-base font-medium text-default-800 dark:text-default-300">
                                 {item.name}
                               </h5>
                             </li>
@@ -100,7 +100,7 @@ const Footer = () => {
                             <li>
                               <Link
                                 href={`${item.link ? item.link : ''}`}
-                                className="text-base text-default-700 transition-all hover:text-default-950"
+                                className="text-base text-default-700 dark:text-default-400 transition-all hover:text-default-950 dark:hover:text-default-200"
                               >
                                 {item.name}
                               </Link>

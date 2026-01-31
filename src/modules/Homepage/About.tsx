@@ -22,10 +22,10 @@ const About = () => {
                 Tentang FORKAPI
               </SectionBadge>
             </div>
-            <h2 className="text-4xl font-medium text-default-950">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-default-950">
               Lembaga Profesional Komunikasi Pembangunan
             </h2>
-            <p className="mb-6 mt-4 text-lg">
+            <p className=" text-lg">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio odio eum quisquam amet dignissimos consequatur cum molestias quae, officiis obcaecati magnam architecto inventore nobis dolore explicabo, quos tenetur recusandae quaerat. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et assumenda at reprehenderit maiores. Fugiat doloribus omnis necessitatibus, reiciendis velit quod libero itaque! Adipisci ex, nobis numquam repellendus voluptatem molestias quisquam?
             </p>
             <Button className='p-0 py-0 w-fit'>
@@ -34,7 +34,7 @@ const About = () => {
                 <LuMoveRight className="h-5 w-5" />
               </Link>
             </Button>
-            <div className="mt-10 grid grid-cols-3 gap-2">
+            <div className="mt-4 sm:mt-10 grid grid-cols-3 gap-2">
               {/* <Image width={400} height={400} alt="photography-image" src={photography13} /> */}
               <Image width={400} height={400} alt="photography-image5" src={photography14} />
               <Image width={400} height={400} alt="photography-image2" src={photography7} />

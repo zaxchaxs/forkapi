@@ -15,26 +15,20 @@ export const metadata: Metadata = {
 
 const Home = () => {
   return (
-    <>
-      <TopNavBar
-        menuItems={['home', 'tentang kami', 'konferensi', 'kegiatan', 'galeri',]}
-        position="fixed"
-      />
-      <main className='w-full h-full flex flex-col gap-4'>
-        <Hero />
-        <About />
-        <ConferenceSection />
-        <MediaPartner />
-        <ActivitySection />
-        <GallerySection />
+    <main className='w-full h-full flex flex-col gap-4'>
+      <Hero />
+      <About />
+      <ConferenceSection />
+      <MediaPartner />
+      <ActivitySection />
+      <GallerySection />
 
-        {/* <Counter /> */}
-        {/* <Newsletter /> */}
+      {/* <Counter /> */}
+      {/* <Newsletter /> */}
 
-        <FAQs />
-        {/* <ContactUs /> */}
-      </main>
-    </>
+      <FAQs />
+      {/* <ContactUs /> */}
+    </main>
   )
 }
 

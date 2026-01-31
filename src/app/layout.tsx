@@ -7,7 +7,7 @@ import dynamic from 'next/dynamic'
 import { Toaster } from 'sonner'
 
 import '@/assets/css/style.css'
-import { Footer } from '@/components'
+import { Footer, TopNavBar } from '@/components'
 
 const AppProvidersWrapper = dynamic(
   () => import('@/components/AppsProviderWrapper'),
@@ -86,6 +86,10 @@ export default function RootLayout({
         <NextTopLoader color="#ea580c" showSpinner={false} />
         <div id="__next_splash">
           <AppProvidersWrapper>
+            <TopNavBar
+              menuItems={['home', 'tentang kami', 'konferensi', 'kegiatan', 'galeri',]}
+              position="fixed"
+            />
             <Suspense fallback={loading()}>
               {children}
             </Suspense>

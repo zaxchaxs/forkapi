@@ -24,17 +24,17 @@ const Hero = () => {
     >
       <div className="flex items-center overflow-hidden before:absolute before:inset-0 before:left-[63.67%] before:hidden before:rounded-bl-3xl before:bg-primary/80 lg:before:block">
         <div
-          className="absolute -top-44 bottom-0 right-0 w-2/6 bg-contain bg-right bg-no-repeat"
-          style={{ backgroundImage: `url('${charityBackgroundImg}')` }}
+          className="absolute -top-44 bottom-0 right-0 w-2/6 bg-contain bg-right bg-no-repeat hidden lg:block"
+          style={{ backgroundImage: `url('${charityBackgroundImg.src}')` }}
         />
         <div className="container">
           <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">
             <div>
               <div className="flex flex-col justify-center">
-                <h2 className="mb-4 text-2xl font-medium text-default-950 sm:text-3xl xl:text-5xl/tight">
+                <h2 className="sm:mb-4 text-2xl font-bold text-default-950 dark:text-white sm:text-4xl xl:text-5xl/tight">
                   FORKAPI - Forum Komunikasi Pembangunan Indonesia
                 </h2>
-                <p className="mt-5 text-lg">
+                <p className="mt-5 text-base sm:text-lg text-default-600 dark:text-default-300">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore expedita possimus alias enim dolor deleniti quidem ea perferendis commodi beatae. Laudantium, vel! Error magni quasi pariatur asperiores eligendi sapiente minus.
                 </p>
                 <div className="mt-10">
@@ -53,19 +53,19 @@ const Hero = () => {
                   <Image
                     alt="charity1"
                     src={charityImg1}
-                    className="h-full w-full rounded-lg object-cover"
+                    className="h-full w-full rounded-lg object-cover shadow-lg"
                   />
                 </div>
                 <div className="relative flex w-full flex-col gap-4 pb-10 md:gap-6 md:pb-16">
                   <Image
                     alt="charity2"
                     src={charityImg2}
-                    className="h-40 w-full rounded-lg object-cover md:h-[278px]"
+                    className="h-40 w-full rounded-lg object-cover md:h-[278px] shadow-lg"
                   />
                   <Image
                     alt="charity3"
                     src={charityImg3}
-                    className="h-40 w-full rounded-lg object-cover md:h-[278px]"
+                    className="h-40 w-full rounded-lg object-cover md:h-[278px] shadow-lg"
                   />
                 </div>
               </div>
