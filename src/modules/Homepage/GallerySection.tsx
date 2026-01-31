@@ -16,7 +16,7 @@ import SectionBadge from "@/components/ui/SectionBadge";
 
 const GallerySection = () => {
   return (
-    <section id="galeri" className="py-5 lg:py-10 bg-default-100 dark:bg-default-50/50">
+    <section id="gallery" className="py-5 lg:py-10 bg-default-100 dark:bg-default-50/50">
       <div className="container">
         <div className="flex flex-col gap-4 items-center mb-5">
           <SectionBadge className="w-fit">

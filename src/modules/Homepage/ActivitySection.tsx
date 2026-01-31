@@ -16,7 +16,7 @@ const ActivitySection = () => {
   const { themeMode } = useLayoutContext()
 
   return (
-    <section id="kegiatan" className="relative bg-default-100 bg-cover bg-no-repeat py-24 dark:bg-default-50 lg:py-10" style={{
+    <section id="activity" className="relative bg-default-100 bg-cover bg-no-repeat py-24 dark:bg-default-50 lg:py-10" style={{
       backgroundImage: `url(${themeMode === 'light' ? backgroundLine.src : backgroundLineDark.src})`,
     }}>
       <div className="container">

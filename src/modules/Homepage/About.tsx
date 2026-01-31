@@ -10,7 +10,7 @@ import SectionBadge from "@/components/ui/SectionBadge";
 
 const About = () => {
   return (
-    <section id="tentang kami" className="py-5 lg:py-10">
+    <section id="about-us" className="py-5 lg:py-10">
       <div className="container">
         <div className="grid grid-cols-1 items-center gap-4 lg:gap-10 lg:grid-cols-2">
           <div className="relative w-full h-full">

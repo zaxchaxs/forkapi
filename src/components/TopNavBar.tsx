@@ -9,14 +9,15 @@ import { LuChevronDown, LuDownloadCloud, LuMenu, LuX } from 'react-icons/lu';
 import { landingPages } from '@/assets/data';
 
 import logoDark from '@/assets/images/mainLogo.png';
-import logoLight from '@/assets/images/mainLogo.png'; // Assuming you have different assets, but if not, logic handles visibility
+import logoLight from '@/assets/images/mainLogo.png';
+import { MenuItem } from '@/data/appData';
 
 const TopNavBar = ({
   menuItems,
   position,
   hasDownloadButton,
 }: {
-  menuItems: string[];
+  menuItems: MenuItem[];
   position: 'sticky' | 'fixed';
   hasDownloadButton?: boolean;
 }) => {
@@ -55,16 +56,16 @@ const TopNavBar = ({
     };
   }, [hash]);
 
-  const [activation, setActivation] = useState<string>(menuItems[0]);
+  const [activation, setActivation] = useState<string>(menuItems[0].href);
 
   const activeSection = () => {
     const scrollY = window.scrollY;
 
     for (let i = menuItems.length - 1; i >= 0; i--) {
       const section = menuItems[i];
-      const el: HTMLElement | null = document.getElementById(section)
+      const el: HTMLElement | null = document.getElementById(section.href)
       if (el && el.offsetTop <= scrollY + 150) {
-        setActivation(section);
+        setActivation(section.href);
         return;
       }
     }
@@ -118,14 +119,17 @@ const TopNavBar = ({
                       key={idx}
                       className={cn(
                         'menu-item mx-2 font-medium capitalize transition-all duration-300 hover:text-primary',
-                        activation === item ? 'text-primary' : 'text-default-800 dark:text-default-300'
+                        // Kalo mau berdasarkan scroll
+                        // activation === item.href ? 'text-primary' : 'text-default-800 dark:text-default-300'
+
+                        pathname === item.href ? 'text-primary' : 'text-default-800 dark:text-default-300'
                       )}
                     >
                       <Link
                         className="inline-flex items-center rounded-full px-2 py-0.5 text-sm lg:text-base"
-                        href={`/${item === 'home' ? '' : item === 'tentang kami' ? 'about-us' : item === 'konferensi' ? 'conference' : item === 'kegiatan' ? 'activity' : 'gallery'}`}
+                        href={`${item.href}`}
                       >
-                        {toSentenceCase(item)}
+                        {toSentenceCase(item.label)}
                       </Link>
                     </li>
                   );
@@ -164,7 +168,9 @@ const TopNavBar = ({
           <nav className="hs-accordion-group flex h-full w-full flex-col flex-wrap p-4">
             <ul className="space-y-1">
               {menuItems.map((item, idx) => {
-                const linkHref = item === 'home' ? '/' : `/${item === 'tentang kami' ? 'about-us' : item === 'konferensi' ? 'conference' : item === 'kegiatan' ? 'activity' : 'gallery'}`;
+                const linkHref = item.href;
+                // const linkHref = item === 'home' ? '/' : `/${item === 'tentang kami' ? 'about-us' : item === 'konferensi' ? 'conference' : item === 'kegiatan' ? 'activity' : 'gallery'}`;
+
                 return (
                   <li
                     key={idx}
@@ -174,7 +180,7 @@ const TopNavBar = ({
                     )}
                   >
                     <Link className="block w-full px-4 py-2.5" href={linkHref}>
-                      {toSentenceCase(item)}
+                      {toSentenceCase(item.label)}
                     </Link>
                   </li>
                 );

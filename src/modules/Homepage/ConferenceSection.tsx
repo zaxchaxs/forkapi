@@ -16,7 +16,7 @@ import SectionBadge from '@/components/ui/SectionBadge'
 
 const ConferenceSection = () => {
   return (
-    <section id="konferensi" className="relative py-5 lg:py-10 bg-white dark:bg-default-50">
+    <section id="conference" className="relative py-5 lg:py-10 bg-white dark:bg-default-50">
       <div className="container">
         <div className="mb-4 sm:mb-10 flex items-end justify-between">
           <div className="mx-auto max-w-2xl text-center">

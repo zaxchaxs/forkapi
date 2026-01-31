@@ -8,6 +8,7 @@ import { Toaster } from 'sonner'
 
 import '@/assets/css/style.css'
 import { Footer, TopNavBar } from '@/components'
+import { menuItems } from '@/data/appData'
 
 const AppProvidersWrapper = dynamic(
   () => import('@/components/AppsProviderWrapper'),
@@ -87,7 +88,7 @@ export default function RootLayout({
         <div id="__next_splash">
           <AppProvidersWrapper>
             <TopNavBar
-              menuItems={['home', 'tentang kami', 'konferensi', 'kegiatan', 'galeri',]}
+              menuItems={menuItems}
               position="fixed"
             />
             <Suspense fallback={loading()}>
