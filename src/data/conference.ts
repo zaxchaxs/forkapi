@@ -12,8 +12,8 @@
 //       </p>
 
 // Placeholder images - replace with actual assets later
-import conferenceImg1 from "@/assets/images/placeholder landscape.png";
-import conferenceImg2 from "@/assets/images/placeholder landscape.png";
+import conferenceImg1 from "@/assets/images/placeholderPotrait.png";
+import conferenceImg2 from "@/assets/images/placeholderPotrait.png";
 
 export const upcomingConferences = [
   {

@@ -1,6 +1,6 @@
-import galleryImg1 from "@/assets/images/placeholder landscape.png";
-import galleryImg2 from "@/assets/images/placeholder landscape.png";
-import galleryImg3 from "@/assets/images/placeholder landscape.png";
+import galleryImg1 from "@/assets/images/placeholderPotrait.png";
+import galleryImg2 from "@/assets/images/placeholderPotrait.png";
+import galleryImg3 from "@/assets/images/placeholderPotrait.png";
 
 export const galleryItems = [
   {

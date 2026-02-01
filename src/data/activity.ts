@@ -1,5 +1,5 @@
-import activityImg1 from "@/assets/images/placeholder landscape.png";
-import activityImg2 from "@/assets/images/placeholder landscape.png";
+import activityImg1 from "@/assets/images/placeholderPotrait.png";
+import activityImg2 from "@/assets/images/placeholderPotrait.png";
 
 export const activities = [
   {
