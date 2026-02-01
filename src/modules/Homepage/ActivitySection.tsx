@@ -17,7 +17,7 @@ const ActivitySection = () => {
 
   return (
     <section id="activity" className="relative bg-default-100 bg-cover bg-no-repeat py-24 dark:bg-default-100 lg:py-10" style={{
-      backgroundImage: `url(${themeMode === 'light' ? backgroundLine.src : backgroundLineDark.src})`,
+      backgroundImage: `url(${themeMode === 'light' ? backgroundLine : backgroundLineDark})`,
     }}>
       <div className="container">
         <div className="mx-auto mb-12 max-w-2xl text-center">

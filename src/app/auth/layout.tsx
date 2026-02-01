@@ -10,7 +10,7 @@ const Layout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
     <div
       className="relative bg-cover bg-center bg-no-repeat p-2 lg:p-0"
-      style={{ backgroundImage: `url("${authBgImg.src}")` }}
+      style={{ backgroundImage: `url("${authBgImg}")` }}
     >
       <div className="absolute inset-0 bg-black/10" />
       <div className="flex h-screen w-full items-center justify-center">

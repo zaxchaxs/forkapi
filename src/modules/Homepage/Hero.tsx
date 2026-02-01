@@ -19,13 +19,13 @@ const Hero = () => {
       id="home"
       className="relative bg-default-100  bg-cover bg-no-repeat py-24 dark:bg-default-100 lg:py-32"
       style={{
-        backgroundImage: `url(${themeMode === 'light' ? backgroundLine.src : backgroundLineDark.src})`,
+        backgroundImage: `url(${themeMode === 'light' ? backgroundLine : backgroundLineDark})`,
       }}
     >
       <div className="flex items-center overflow-hidden before:absolute before:inset-0 before:left-[63.67%] before:hidden before:rounded-bl-3xl before:bg-primary/80 lg:before:block">
         <div
           className="absolute -top-44 bottom-0 right-0 w-2/6 bg-contain bg-right bg-no-repeat hidden lg:block"
-          style={{ backgroundImage: `url('${charityBackgroundImg.src}')` }}
+          style={{ backgroundImage: `url('${charityBackgroundImg}')` }}
         />
         <div className="container">
           <div className="grid grid-cols-1 items-center gap-10 lg:grid-cols-2">

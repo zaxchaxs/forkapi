@@ -81,7 +81,7 @@ export default function RootLayout({
             alt="Logo"
             width={355}
             height={83}
-            src={logo.src}
+            src={logo}
             style={{ height: '30%', width: 'auto' }}
           />
         </div>

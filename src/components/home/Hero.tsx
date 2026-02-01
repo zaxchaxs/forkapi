@@ -16,7 +16,7 @@ const Hero = () => {
     <section
       className="bg-default-10 relative border-b border-default-100  py-6 dark:bg-default-50 sm:py-10 md:py-32"
       style={{
-        backgroundImage: `url(${themeMode === 'light' ? backgroundLine2.src : backgroundLine2Dark.src})`,
+        backgroundImage: `url(${themeMode === 'light' ? backgroundLine2 : backgroundLine2Dark})`,
       }}
       id="home"
     >
